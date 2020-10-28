@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://EnemyBullet/EnemyBullet.gd" type="Script" id=1]
+[ext_resource path="res://Assets/PNG/Sprites X2/Missiles/spaceMissiles_016.png" type="Texture" id=2]
+
+[node name="EnemyBullet" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 12.5, -20.3, 12.5, 24.5, -12.5, 24.5, -12.5, -21.3, -9.5, -24.3, 8.5, -24.5 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+polygon = PoolVector2Array( -5.74013, -24.83, 3.77353, -24.5327, 8.82765, -24.5327, 11.8007, -21.5597, 12.6926, -16.2082, 13.2872, -9.07299, 13.5845, 8.17051, 12.3953, 19.468, 13.8818, 23.3329, 8.82765, 25.414, 0.800507, 25.414, -11.6862, 24.5221, -13.47, 22.7383, -12.2808, 16.1977, -12.2808, -0.153938, -13.47, -9.66759, -14.3619, -20.0732, -9.90236, -22.4516 )
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
