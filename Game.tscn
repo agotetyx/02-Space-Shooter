@@ -78,22 +78,40 @@ scale = Vector2( 0.933279, 0.234418 )
 [node name="Rocks" type="Node2D" parent="."]
 
 [node name="Rocks" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2546.71, 1036.94 )
+position = Vector2( 2293.75, 897.247 )
 
 [node name="Rocks2" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2649.23, 947.369 )
+position = Vector2( 1527.91, 1207.88 )
 
 [node name="Rocks3" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2633.31, 1146.96 )
+position = Vector2( 2584.23, 988.389 )
 
 [node name="Rocks4" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2433.44, 1124.39 )
+position = Vector2( 2524.05, 716.636 )
 
 [node name="Rocks5" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2367.87, 1283.89 )
+position = Vector2( 1820.42, 1317.87 )
 
 [node name="Rocks6" parent="Rocks" instance=ExtResource( 5 )]
-position = Vector2( 2533.02, 1267.71 )
+position = Vector2( 2359.35, 1267.71 )
+
+[node name="Rocks7" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 2019.55, 833.528 )
+
+[node name="Rocks8" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 2215.88, 678.733 )
+
+[node name="Rocks9" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 2468.84, 440.876 )
+
+[node name="Rocks10" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 2638.73, 316.285 )
+
+[node name="Rocks11" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 1777.92, 961.895 )
+
+[node name="Rocks12" parent="Rocks" instance=ExtResource( 5 )]
+position = Vector2( 2110.16, 1112.91 )
 
 [node name="Enemies" type="Node2D" parent="."]
 
