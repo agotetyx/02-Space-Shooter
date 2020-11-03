@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Font/Mandalore-K77lD.otf" type="DynamicFontData" id=1]
 [ext_resource path="res://Menu/Die.gd" type="Script" id=2]
+[ext_resource path="res://Assets/lose bg.jpg" type="Texture" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -36,17 +37,33 @@ margin_top = 210.0
 margin_right = 612.0
 margin_bottom = 270.0
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0.639216, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 0, 0.639216, 0, 1 )
 text = "Play Again"
+__meta__ = {
+"_editor_description_": ""
+}
 
 [node name="Quit" type="Button" parent="."]
 margin_left = 412.0
-margin_top = 320.0
+margin_top = 321.782
 margin_right = 612.0
-margin_bottom = 380.0
+margin_bottom = 381.782
 custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+custom_colors/font_color_pressed = Color( 1, 0, 0, 1 )
 text = "Quit"
 __meta__ = {
-"_edit_use_anchors_": false
+"_edit_use_anchors_": false,
+"_editor_description_": ""
 }
+
+[node name="Sprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 515.79, 293.794 )
+scale = Vector2( 0.300476, 0.300476 )
+texture = ExtResource( 3 )
 [connection signal="pressed" from="Play" to="." method="_on_Play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

@@ -10,6 +10,6 @@ func _ready():
 func update_score(s):
 	global.score += s
 	$Score.text = "Score: " + str(global.score)
-	if global.score >= 30:
+	if global.score >= 50:
 		get_tree().change_scene("res://Menu/Win.tscn")
 
