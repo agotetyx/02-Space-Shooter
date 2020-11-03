@@ -74,6 +74,7 @@ position = Vector2( 2308.78, -275.952 )
 
 [node name="EnemyBullet" parent="EnemyBullet container" instance=ExtResource( 7 )]
 scale = Vector2( 0.933279, 0.234418 )
+velocity = Vector2( 0, -10 )
 
 [node name="Rocks" type="Node2D" parent="."]
 
