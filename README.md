@@ -6,7 +6,7 @@ Project for MSCH-C220, 28 October 2020
 
 ## To play
 Use WASD keys to accelerate the player. Spacebar to shoot. A and D keys rotate the player in the left and right directions respectively
-Built using Godot 3.2.2
+
 
 ## Extra features:
 HUD
